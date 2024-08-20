@@ -7,7 +7,7 @@ class ApiProvider {
     var client = http.Client();
     try {
       var response = await client.get( 
-          headers: {'Authorization': 'UD8ME2D7mu8es2EfmTEztdv627oO1O7YnW6iopO4HPRcigSLxMw5jwG1'},
+          headers: {'Authorization': '<Your Pexels Api Key Generated>'},
           Uri.parse('https://api.pexels.com/v1/search?query=$queryParams'));
       Map<String, dynamic> rawResponse = jsonDecode(response.body); 
       return rawResponse;
